@@ -20,7 +20,7 @@
     "SALARIES": {
       "type": "float",
       "desc": "Income from Salary",
-      "form": {"2017": "ITR-3 Part B-TI-1 or ITR-1 Part B B1"}
+      "form": {"2017": "ITR-3 Part B-TI-1"}
     },
     "INCOME_HP": {
       "type": "float",
@@ -117,6 +117,11 @@
     "Income_BP": {
       "type": "float",
       "desc": "Computed income from Business and Profession)",
+      "form": {"2017": "ITR-3 Part B-TI-3vi"}
+    },
+    "Income_House_Property": {
+      "type": "float",
+      "desc": "Computed income from House Property)",
       "form": {"2017": "ITR-3 Part B-TI-3vi"}
     },
     "Tax_ST_CG_RATE1": {

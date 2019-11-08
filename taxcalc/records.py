@@ -216,6 +216,7 @@ class Records(object):
         """
         # pylint: disable=too-many-locals,too-many-statements
         GF_SALARY = self.gfactors.factor_value('SALARY', year)
+        GF_INCOME_HP = self.gfactors.factor_value('GF_INCOME_HP', year)
         GF_RENT = self.gfactors.factor_value('RENT', year)
         GF_BP_NONSPECULATIVE = self.gfactors.factor_value('BP_NONSPECULATIVE',
                                                           year)
@@ -236,7 +237,7 @@ class Records(object):
         GF_BFL_SET_OFF_BALANCE = self.gfactors.factor_value('LOSSES_BF', year)
         GF_NET_AGRC_INCOME = self.gfactors.factor_value('AGRI_INCOME', year)
         self.SALARIES *= GF_SALARY
-        self.INCOME_HP *= GF_RENT
+        self.INCOME_HP *= GF_INCOME_HP
         self.PRFT_GAIN_BP_OTHR_SPECLTV_BUS *= GF_BP_NONSPECULATIVE
         self.PRFT_GAIN_BP_SPECLTV_BUS *= GF_BP_SPECULATIVE
         self.PRFT_GAIN_BP_SPCFD_BUS *= GF_BP_SPECIFIED

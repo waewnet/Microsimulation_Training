@@ -43,7 +43,7 @@ class GrowFactors(object):
     # TODO: Growfactors for Corporate and non-corporate Income heads are
     # TODO: currently set as same. New field names should be read in case we
     # TODO: want separate growfactors for Corporate and Non-corporate data.
-    VALID_NAMES = set(['CPI', 'SALARY', 'RENT', 'BP_NONSPECULATIVE',
+    VALID_NAMES = set(['CPI', 'SALARY', 'RENT', 'GF_INCOME_HP','BP_NONSPECULATIVE',
                        'BP_SPECULATIVE', 'BP_SPECIFIED', 'BP_PATENT115BBF',
                        'STCG_APPRATE', 'OINCOME', 'DEDUCTIONS',
                        'DEDU_SEC_10A_OR_10AA', 'ST_CG_AMT_1',
